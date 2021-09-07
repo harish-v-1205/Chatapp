@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "277848957663",
+    "project_id": "kotlinmessenger-dc6f7",
+    "storage_bucket": "kotlinmessenger-dc6f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277848957663:android:773f5582aa541de469ff6a",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277848957663-p5pos2lled396i3qiks9aphu7qmen97n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszX9Xt_6k6rS-eZZgRa1mSfdhGg3Ws2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277848957663-p5pos2lled396i3qiks9aphu7qmen97n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
