@@ -62,6 +62,7 @@ class ChatLogActivity : AppCompatActivity() {
                         adapter.add(ChatFromItem(chatMessage.text, toUser!!))
                     }
                 }
+                findViewById<RecyclerView>(R.id.recyclerview_chatlog).scrollToPosition(adapter.itemCount -1)
             }
 
             override fun onChildChanged(p0: DataSnapshot, p1: String?) {
@@ -104,6 +105,12 @@ class ChatLogActivity : AppCompatActivity() {
                 findViewById<RecyclerView>(R.id.recyclerview_chatlog).scrollToPosition(adapter.itemCount -1)
             }
         toreference.setValue(chatMessage)
+
+        val latestMessageReference=FirebaseDatabase.getInstance().getReference("/latest-messages/$fromID/$toID")
+        latestMessageReference.setValue(chatMessage)
+        val latestMessageToReference=FirebaseDatabase.getInstance().getReference("/latest-messages/$toID/$fromID")
+        latestMessageToReference.setValue(chatMessage)
+
     }
 
 }
